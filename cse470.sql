@@ -139,9 +139,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `full_name`, `phone_number`, `user_type`) VALUES
-(25, 'Faria', '1234', 'faria@gmail.com', 'Faria Tasnim', '01953724409', 'customer'),
+(25, 'Faria', '1234', 'faria@gmail.com', 'Faria Tasnim', '01900000000', 'customer'),
 (27, 'admin', '1234', 'admin@gmail.com', 'admin', '12345678912', 'admin'),
-(44, 'tasnim', '1234', 'tasnim@gmail.com', 'Tasnim F', '01819443358', 'customer');
+(44, 'tasnim', '1234', 'tasnim@gmail.com', 'Tasnim F', '00000000000', 'customer');
 
 --
 -- Indexes for dumped tables
