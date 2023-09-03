@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5f3ff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #e5f3ff;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    animation-name: spinLogo;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4086e3;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: #e5f3ff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(245, 239, 239, 0.2);
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #ffffff;
+    outline: none;
+}
+
+nav ul li a.active {
+    background-color: #e5f3ff;
+}
+
+nav ul li a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    text-decoration: none;
+    color: #4086e3;
+    font-weight: bold;
+    padding: 12px 44px;
+    background-color: #e5f3ff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(245, 239, 239, 0.2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #e5f3ff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: #4086e3;
+    padding: 12px 16px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.logo span {
+    font-size: 1.7rem;
+    margin-left: 10px;
+    color: #4086e3;
+}

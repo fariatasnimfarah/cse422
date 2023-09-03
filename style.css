@@ -1,0 +1,249 @@
+.slideshow-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.prev-slide,
+.next-slide {
+    background-color: rgba(0, 0, 0, 0.219);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 16px;
+    position: absolute;
+    display: inline-block;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+    opacity: 0.8;
+}
+
+.prev-slide {
+    left: 0;
+}
+
+.next-slide {
+    right: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slideshow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ffffff;
+    font-size: 36px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+/* Style each feature */
+
+.feature {
+    width: calc(100% / 3 - 2rem);
+    max-width: 400px;
+    margin: 1rem;
+    text-align: center;
+    background-color: #e4f7fb;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style the icons */
+
+.feature i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+
+/* Style the headings */
+
+.feature h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* Style the paragraphs */
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+/* Styles for the destinations section */
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.destination-card {
+    width: calc(50% - 20px);
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(245, 239, 239, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(245, 239, 239, 0.3);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.destination-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 50px auto 0;
+    padding: 15px 30px;
+    background-color: #4086e3;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #1854a4;
+}
+
+footer {
+    background-color: #4086e3;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.social-icons .fa-facebook-f,
+.social-icons .fa-twitter,
+.social-icons .fa-instagram {
+    color: #fff;
+}
